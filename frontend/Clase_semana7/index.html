@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1 class="card__title">Inscripción</h1>
+            <p>Formulario de Inscripcion de alumnos</p>
+            <br>
+            <form action="#" class="form">
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label for="name" class="form__label">Nombre del estudiante: </label>
+                        <input type="text" id="name" name="estudiante" class="form__input" placeholder="Nombre completo" required>
+                    </li>
+                    <li class="form__item">
+                       <label for="email" class="form__label">Correo electronico: </label> 
+                       <input type="email" id="email" name="correo" class="form__input" placeholder="usuario@ues.edu.sv" required>
+                    </li>
+                    <li class="form__item">
+                         <label for="pass" class="form__label">Contraseña: </label> 
+                       <input type="password" id="pass" name="clave" class="form__input" required>
+                    </li>
+
+                </ul>
+                <button type="submit" class="form__button form__button--active"> Enviar Datos
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 Ingeniería de Software</p>
+    </footer>
+
+
+
+
+
+    
+</body>
+</html>

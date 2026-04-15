@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.card{
+    background: #fff ;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.card__title {
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+.form__list {
+    list-style: none; /* Quitamos los puntos de la lista <ul> */
+    text-align: left;
+}
+
+.form__item {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block; /* Hace que el label ocupe toda la línea, obligando al input a bajar */
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Transición suave al hacer clic */
+}
+
+.form__input:focus{
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.form__button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form__button--active {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.form__button--active:hover {
+    background-color: #1557b0;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+
