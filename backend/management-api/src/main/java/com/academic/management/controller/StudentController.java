@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.*;
 
 
 
-
 @Tag(name = "Estudiantes", description = "Operaciones para la gestion de estidiantes")
 @RestController
 @RequestMapping("/api/v1/students")
+//@CrossOrigin(origins = "http://localhost:5173")
 public class StudentController {
 
     private final StudentService studentService;

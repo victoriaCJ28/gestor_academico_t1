@@ -1,0 +1,104 @@
+:root {
+  --primary: #0284c7;
+  --primary-dark: #0369a1;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --slate-800: #1e293b;
+  --slate-50: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HEADER ALINEADO */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.btn-add {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-add:hover { background-color: var(--primary-dark); }
+
+/* TABLA FULL WIDTH Y ALINEADA */
+.table-responsive {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Forzamos alineación horizontal en los títulos */
+thead tr {
+  background-color: var(--slate-800);
+  display: table-row !important; /* Evita que el Mobile-First lo rompa en desktop */
+}
+
+th {
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+/* BOTONES SEMÁNTICOS */
+.btn-edit {
+  background-color: var(--success);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.btn-delete {
+  background-color: var(--danger);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* MOBILE FIRST RE-AJUSTADO */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr { display: block; }
+  thead tr { display: none !important; }
+  td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
